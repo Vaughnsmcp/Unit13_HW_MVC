@@ -43,8 +43,7 @@ const orm = {
       cb(result);
     });
   },
-  // objColVals would be the columns and values that you want to update
-  // an example of objColVals would be {name: panther, sleepy: true}
+
   update: function(table, objColVals, condition, cb) {
     const queryString = "UPDATE " + table;
     queryString += " SET ";

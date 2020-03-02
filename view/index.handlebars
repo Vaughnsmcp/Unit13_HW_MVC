@@ -1,0 +1,38 @@
+<h1>Bob's Burgers!</h1>
+
+<h2>Burgers that are good!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#unless this.digested}}
+      {{> burgers/burger-block digested=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Burgers that are bad!!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if digested}}
+      {{> burgers/burger-block digested=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Burger</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="Burger">Burger Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="digested">Digested?</label><br>
+    <input type="digested" name="digested" value="1" checked> Digested!<br>
+    <input type="rejected" name="rejected" value="0" checked> Rejected!<br>
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form>
