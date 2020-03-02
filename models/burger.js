@@ -23,4 +23,4 @@ const burger = {
          },value,cb)
      }
 }
-module.exports=burger
+module.exports=burgers

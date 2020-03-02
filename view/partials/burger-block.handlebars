@@ -1,0 +1,9 @@
+<li>
+	{{name}}
+
+{{#if digest}}
+
+{{else}}
+<button class="digest" data-id="{{this.id}}" data-newDigest="{{digest}}">Digest!</button>
+{{/if}}
+</li>
