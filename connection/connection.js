@@ -7,7 +7,7 @@ const connection = mysql.createConnection({
     password: "password",
     database: "burgers_db"
 });
-connnection.connect(function(err){if(err){
+connection.connect(function(err){if(err){
     console.log("err"+err.stack);
     return;
 }console.log("connected as id " + connection.threadId);
