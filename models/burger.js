@@ -10,7 +10,7 @@ const burger = {
     create:function(name, cb){
 
         orm.create("burgers",[
-            "burger_name","digested"
+            "burger_name","devoured"
         ],[
             name,false
         ],cb)
@@ -19,7 +19,7 @@ const burger = {
      update:function(id, cb){
          const value = "id =" + id;
          orm.update("burgers",{
-             digested:true
+             devoured:true
          },value,cb)
      }
 }
