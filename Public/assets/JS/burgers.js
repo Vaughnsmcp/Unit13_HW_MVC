@@ -1,7 +1,7 @@
 'use strict';
 
 $(function() {
-  $('.createburger').on('click', function(event) {
+  $('.devoured').on('click', function(event) {
     const id = $(this).data('id');
     const createBurger = $(this).data('new');
 
@@ -11,7 +11,7 @@ $(function() {
 
     $.ajax('/api/burgers/' + id, {
       type: 'PUT',
-      data: newBurgerState
+      data: createBurgerState
     }).then(function() {
       console.log('changed burger to', createBurger);
     
@@ -22,14 +22,15 @@ $(function() {
   $('.create-form').on('submit', function(event) {
 
     event.preventDefault();
+    console.log($('#burger').val())
 
-    const newBurger = {
+    const createBurger = {
       name: $('#burger')
         .val()
-        .trim(),
-      good: $('[name=good]:checked')
-        .val()
         .trim()
+ 
+        
+    
     };
 
     $.ajax('/api/burgers', {
