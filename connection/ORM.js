@@ -28,14 +28,19 @@ const orm = {
   // vals is an array of values that we want to save to cols
   // cols are the columns we want to insert the values into
   create: function(table, cols, vals, cb) {
-    const queryString = "INSERT INTO " + table;
+    let queryString = "INSERT INTO " + table;
     queryString += " (";
     queryString += cols.toString();
     queryString += ") ";
     queryString += "VALUES (";
     queryString += printQuestionMarks(vals.length);
     queryString += ") ";
+    console.log("*********");
+    console.log(cols,"these are columns"); 
     console.log(queryString);
+    console.log(vals);
+    console.log("*********");
+
     connection.query(queryString, vals, function(err, result) {
       if (err) {
         throw err;
@@ -45,7 +50,7 @@ const orm = {
   },
 
   update: function(table, objColVals, condition, cb) {
-    const queryString = "UPDATE " + table;
+    let queryString = "UPDATE " + table;
     queryString += " SET ";
     queryString += objToSql(objColVals);
     queryString += " WHERE ";
