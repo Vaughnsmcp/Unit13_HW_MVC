@@ -26,7 +26,7 @@ function objToSql(ob) {
 }
 
 var orm = {
-  startup: function
+  startup: function(){},
       // queryString = "use schema.sql"
       // queryString = "use seeds.sql"
   all: function(tableInput, cb) {
