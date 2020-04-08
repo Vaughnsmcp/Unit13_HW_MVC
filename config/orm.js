@@ -26,6 +26,9 @@ function objToSql(ob) {
 }
 
 var orm = {
+  startup: function
+      // queryString = "use schema.sql"
+      // queryString = "use seeds.sql"
   all: function(tableInput, cb) {
     var queryString = "SELECT * FROM " + tableInput + ";";
     connection.query(queryString, function(err, result) {
