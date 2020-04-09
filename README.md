@@ -17,8 +17,8 @@ This app runs both on and offline to help manage your spending habits.
 _No known bugs._
 
 ## Technologies Used
-* _MySQL_
 * _Node_
+* _MySql_
 * _JavaScript_
 * _HTML_
 * _CSS_
