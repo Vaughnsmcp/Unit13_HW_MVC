@@ -5,7 +5,7 @@
 ![TitlePageImage](https://oftenofftopic.files.wordpress.com/2018/12/bobs-burgers-cheddar-burger.jpg?w=663npm)
 
 ## Description
-This app runs both on and offline to help manage your spending habits. 
+This app takes the burger of your choice and adds it to a list. Simply create a burger, click submit, and then click the devour button. Your selection will show up on the list. 
 
 ## Setup/Installation Requirements
 * _Clone Repo_
