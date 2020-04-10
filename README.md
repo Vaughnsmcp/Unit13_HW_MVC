@@ -13,7 +13,7 @@ This app runs both on and offline to help manage your spending habits.
 * _Start Server, npm run start_
 * _go to browser, locathost:8000_
 
-## Known Bugs
+## Known Bug
 _No known bugs._
 
 ## Technologies Used
